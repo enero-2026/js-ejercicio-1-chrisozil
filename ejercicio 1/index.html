@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM: To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-container">
+        <h1>Mi Lista de Tareas</h1>
+        
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="¿Qué tienes pendiente hoy?" autocomplete="off">
+                <button type="submit" id="add-btn">Agregar</button>
+            </div>
+            <span class="error-message" id="error-msg">Por favor, escribe una tarea válida.</span>
+        </form>
+
+        <div class="counter-container">
+            <p>Tareas pendientes: <span id="pending-counter">0</span></p>
+        </div>
+
+        <ul id="todo-list">
+            </ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
